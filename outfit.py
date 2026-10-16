@@ -1,20 +1,11 @@
 import streamlit as st
 import requests
 import pandas as pd
-from openai import OpenAI
 import urllib.parse
 import base64
+from config import client
 
 st.title("AI 날씨 코디 추천")
-
-
-# -------------------------
-# Qwen API 설정
-# -------------------------
-client = OpenAI(
-    base_url="https://testse.store/v1",
-    api_key="lab-vllm-secret-key-2026"
-)
 
 
 # -------------------------

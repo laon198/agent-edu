@@ -1,15 +1,7 @@
 import streamlit as st
 import base64
-from openai import OpenAI
 from urllib.parse import quote
-
-# -------------------------
-# API 설정
-# -------------------------
-client = OpenAI(
-    base_url="https://testse.store/v1",
-    api_key="lab-vllm-secret-key-2026"
-)
+from config import client
 
 # -------------------------
 # 이미지 Base64 변환

@@ -2,15 +2,7 @@ import streamlit as st
 import base64
 import asyncio
 import edge_tts
-from openai import OpenAI
-
-# -------------------------
-# Qwen 서버 연결
-# -------------------------
-client = OpenAI(
-    base_url="https://testse.store/v1",
-    api_key="lab-vllm-secret-key-2026"
-)
+from config import client
 
 # -------------------------
 # 이미지 Base64 변환

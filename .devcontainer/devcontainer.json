@@ -6,7 +6,7 @@
     "ghcr.io/devcontainers/features/common-utils:2": {}
   },
 
-  "postCreateCommand": "pip install uv && python -m uv sync && python -m uv run playwright install --with-deps chromium",
+  "postCreateCommand": "pip install uv && /home/vscode/.local/bin/uv sync && /home/vscode/.local/bin/uv run playwright install --with-deps chromium",
 
   "remoteEnv": {
     "PATH": "${containerWorkspaceFolder}/.venv/bin:${containerEnv:PATH}"

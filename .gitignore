@@ -1,0 +1,66 @@
+# === macOS ===
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# === uv & Virtual Environments ===
+.venv/
+venv/
+ENV/
+env/
+# uv 캐시 (보통 글로벌 캐시를 쓰지만 프로젝트 내 생성 대비)
+.uv_cache/
+
+# === Python / Bytecode / Cache ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# === PyCharm (.idea) ===
+# 프로젝트 전반 설정만 무시하고 필요한 run configurations는 남기려면 세부 조정 가능하지만,
+# 협업 충돌을 방지하기 위해 통째로 제외하는 것이 일반적입니다.
+.idea/
+*.iml
+*.iws
+
+# === Testing & Coverage ===
+.pytest_cache/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+htmlcov/
+
+# === Type Checking & Linting ===
+.mypy_cache/
+.pyre/
+.pytype/
+.ruff_cache/
+
+# === Secrets & Environment Variables ===
+.env
+.env.*
+!.env.example

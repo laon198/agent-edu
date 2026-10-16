@@ -9,6 +9,10 @@
   "onCreateCommand": "pip install uv",
   "postCreateCommand": "uv sync && uv run playwright install --with-deps chromium",
 
+  "remoteEnv": {
+    "PATH": "${containerWorkspaceFolder}/.venv/bin:${containerEnv:PATH}"
+  },
+
   "forwardPorts": [8501],
   "portsAttributes": {
     "8501": {
